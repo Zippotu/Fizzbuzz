@@ -7,7 +7,7 @@ defmodule FizzBuzz do
 
   def handle_file_read({:ok, result}) do
     result
-    |> String.split("/")
+    |> String.split(",")
     |> Enum.map(&convert_and_evaluate_numbers/1)
   end
 
